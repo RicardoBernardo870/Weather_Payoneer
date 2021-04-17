@@ -9,7 +9,7 @@ import {format, fromUnixTime} from 'date-fns';
 
 const useStyles = makeStyles({
   root: {
-    minWidth: 200,
+    minWidth: 150,
     
   },
   bullet: {
@@ -22,7 +22,7 @@ const useStyles = makeStyles({
   },
   pos: {
     marginBottom: 12,
-    marginRight:100,
+    marginRight: 100
     
   },
 });

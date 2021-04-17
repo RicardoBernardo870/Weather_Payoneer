@@ -9,7 +9,7 @@ import FormControlLabel from '@material-ui/core/FormControlLabel';
 const CheckBox = (props) => {
     return (
         <form>
-            <RadioGroup style={{display: 'flex', justifyContent: 'space-around', alignItems: 'center', margin: 'auto', width: '500px', flexFlow:'wrap'}}  row={true} defaultValue="fahrenheit" aria-label="temperature" name="customized-radios">
+            <RadioGroup style={{display: 'flex', justifyContent: 'space-evenly', alignItems: 'center', margin: 'auto', width: '100%', flexFlow:'wrap'}}  row={true} defaultValue="fahrenheit" aria-label="temperature" name="customized-radios">
             <FormControlLabel value="celsius" control={<Radio color='primary'/>} label="Celsius"  checked={props.degreeType === "celsius"}
         onChange={props.updateForecastDegree} />
             <FormControlLabel value="fahrenheit" control={<Radio color='primary' />} label="Fahrenheit" checked={props.degreeType === "fahrenheit"}

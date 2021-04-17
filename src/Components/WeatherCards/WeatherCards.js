@@ -31,6 +31,7 @@ function handlePageClick({ selected: selectedPage }) {
   return (
     <div>
       <nav>
+      
         <div className='pagination1'>
      
       <ReactPaginate

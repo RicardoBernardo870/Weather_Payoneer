@@ -3,19 +3,17 @@ li {
 }
 
 .pagination {
-  display: flex;
-  justify-content: space-between;
   list-style: none;
-
-  padding: 20px;
+  width: 700px;
   cursor: pointer;
   outline: none;
   margin: auto;
+  display: flex;
+  justify-content: space-around;
 }
 
 .pagination a {
   padding: 10px;
-
   color: rgb(51, 102, 204);
 }
 
@@ -40,9 +38,9 @@ li {
 
 .container {
   display: flex;
-
+  width: 800px;
   flex-direction: row wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   margin: auto;
   padding: 10px;
@@ -50,7 +48,10 @@ li {
 
 @media only screen and (max-width: 600px) {
   .container {
-    justify-content: space-between;
+    flex-direction: column;
     width: 100%;
+  }
+  .pagination {
+    width: 100px;
   }
 }

@@ -82,13 +82,13 @@ return (
      {
             (this.state.loading)
             ?
-           <Container maxWidth="md" minWidth='sm'>
+          
               <p><CircularProgress /></p>
-            </Container>
+           
             : 
-          <Container maxWidth="md" minWidth='sm'>
+          
            <main>
-           <Container maxWidth="md" minWidth='sm'>
+           
             <div>
                 <CheckBox degreeType={this.state.degreeType} updateForecastDegree={this.updateForecastDegree}/>
             </div>
@@ -97,13 +97,13 @@ return (
                 <WeatherCards degreeType={this.state.degreeType} data={this.state.weather} />
             
             </div>
-            </Container>
+         
             <div></div>
             <div className='Chart'>
              <Charts temp={this.state.temp_max} labels={this.state.labels} degreeType={this.state.degreeType} />
             </div>
           </main>
-          </Container>
+          
           }
     </div>
   );
