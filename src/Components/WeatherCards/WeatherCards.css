@@ -6,7 +6,7 @@ li {
   display: flex;
   justify-content: space-between;
   list-style: none;
-  width: 600px;
+
   padding: 20px;
   cursor: pointer;
   outline: none;
@@ -40,7 +40,7 @@ li {
 
 .container {
   display: flex;
-  width: 800px;
+
   flex-direction: row wrap;
   justify-content: space-around;
   align-items: center;
