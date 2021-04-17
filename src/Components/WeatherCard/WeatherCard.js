@@ -40,7 +40,7 @@ const WeatherCard =  (props) =>  {
   const celsius_max = Math.round((fahrenheit_max - 32) * 5/9)
   const fahrenheit_min = Math.round(props.weather.main.temp_min)
   const celsius_min = Math.round((fahrenheit_max - 32) * 5/9)
-  console.log(props.weather)
+ 
   
 
 

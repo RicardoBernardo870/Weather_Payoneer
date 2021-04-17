@@ -45,7 +45,7 @@ class App extends Component {
                 dt = data.list[i];
                 let date_ = dt.dt_txt.split(' ')[0];
                     if(!labels.includes(date_) && dt.dt_txt.split(' ')[1] === '18:00:00'){
-                    // console.log(dt.dt_txt.split(' ')[1]);
+                    
                     labels.push(date_);
                     temp_max.push(dt.main['temp']);
                    
@@ -81,7 +81,7 @@ return (
      {
             (this.state.loading)
             ?
-            <div className='loader'><p><CircularProgress /></p></div>
+            <div className='loader'><CircularProgress /></div>
              
             : 
             <main>
