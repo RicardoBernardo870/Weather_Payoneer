@@ -81,7 +81,8 @@ return (
      {
             (this.state.loading)
             ?
-             <p><CircularProgress /></p>
+            <div className='loader'><p><CircularProgress /></p></div>
+             
             : 
             <main>
             <div>
