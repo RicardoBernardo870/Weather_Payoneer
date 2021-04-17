@@ -1,13 +1,13 @@
 import React from 'react';
 import { Chart } from "react-google-charts"; 
-
 import './Chart.css'
 
- const Charts = (props) => {
+
+const Charts = (props) => {
 
 const label = props.labels
 const Temp = props.temp
-const chartData = [['Days', 'Temperature']]
+const chartData = [['Days', 'Temp']]
 for (let i = 0; i < label.length; i += 1) {
   if (props.degreeType === 'celsius'){
     chartData.push([label[i], Math.round((Temp[i] - 32) * 5/9)])
@@ -20,16 +20,15 @@ for (let i = 0; i < label.length; i += 1) {
   return (
         <div className='Chart'>
       <Chart
-  width={'500px'}
-  height={'300px'}
+  width={'400px'}
+  height={'400px'}
   chartType="BarChart"
   loader={<div>Loading Chart</div>}
   data={chartData}
   options={{
     chart: {
       title: 'Temperature Predictions',
-      
-    },
+      },
    animation: {
             duration: 1000,
             easing: 'out',
@@ -42,7 +41,7 @@ for (let i = 0; i < label.length; i += 1) {
       minValue: 0,
     },
     vAxis: {
-      title: 'City',
+      title: 'Date',
     },
   }}
   

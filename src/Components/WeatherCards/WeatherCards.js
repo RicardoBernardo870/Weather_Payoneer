@@ -3,8 +3,6 @@ import WeatherCard from '../WeatherCard/WeatherCard'
 import ReactPaginate from 'react-paginate';
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
-
-
 import './WeatherCards.css'
 
 const WeatherCards =  (props) =>  {
@@ -31,10 +29,8 @@ function handlePageClick({ selected: selectedPage }) {
   return (
     <div>
       <nav>
-      
         <div className='pagination1'>
-     
-      <ReactPaginate
+     <ReactPaginate
         previousLabel={<ArrowBackIcon />}
         nextLabel={<ArrowForwardIcon />}
         pageCount={pageCount}
@@ -51,9 +47,7 @@ function handlePageClick({ selected: selectedPage }) {
       <section>
         <article>
             <div className='container'>
-              
-               {currentPageData}
-               
+              {currentPageData}
             </div>
         </article>
       </section>
